@@ -49,15 +49,16 @@
   .brand{display:flex;align-items:center;gap:12px}
   .brand .ph{width:38px;height:38px;font-size:0;padding:2px;border-color:rgba(255,255,255,.5)}
   .brand .ph .ph-label{font-size:8px;color:rgba(255,255,255,.8)}
-  .brand-name{color:var(--white);font-size:13px;letter-spacing:3px;font-weight:400;text-transform:uppercase;font-family:'Cormorant Garamond',serif}
-  .nav-cta{color:var(--white);text-decoration:none;font-size:12px;letter-spacing:2px;text-transform:uppercase;border-bottom:1px solid var(--gold);padding-bottom:4px}
+  .brand-name{color:rgba(255,255,255,.82);font-size:11px;letter-spacing:4.5px;font-weight:400;text-transform:uppercase;font-family:'Cormorant Garamond',serif}
+  .nav-cta{color:rgba(255,255,255,.82);text-decoration:none;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;border-bottom:1px solid rgba(201,168,76,.6);padding-bottom:4px}
+  .nav-cta:hover{color:var(--white);border-color:var(--gold)}
 
   /* ---------- FULL-BLEED HERO ---------- */
   .hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;overflow:hidden}
   .hero .hero-bg{position:absolute;inset:0}
   .hero .hero-bg.ph{border:none;border-radius:0}
   .hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(15,20,40,.22) 0%,rgba(11,15,32,.45) 45%,rgba(10,13,28,.78) 72%,rgba(9,12,26,.94) 100%)}
-  .hero-content{position:relative;z-index:2;color:var(--white);padding-bottom:70px;width:100%}
+  .hero-content{position:relative;z-index:2;color:var(--white);padding-top:190px;padding-bottom:70px;width:100%}
   .hero-content .eyebrow{color:var(--gold)}
   .hero h1{font-size:clamp(38px,6vw,68px);font-weight:500;line-height:1.06;margin:20px 0 22px;max-width:15ch}
   .hero h1 em{font-style:italic;color:var(--gold)}
@@ -206,7 +207,7 @@
 <nav>
   <div class="wrap-wide">
     <div class="brand">
-      <img src="logo.png" alt="Nirvana Yoga Global logo" style="height:38px;width:auto">
+      <img src="logo.png" alt="Nirvana Yoga Global logo" style="height:32px;width:auto">
       <div class="brand-name">Nirvana Yoga Global</div>
     </div>
     <a class="nav-cta" href="#next-step">Free Orientation</a>

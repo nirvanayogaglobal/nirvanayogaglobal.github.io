@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Six-Month Yoga Teacher Training — Nirvana Yoga Global</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1742b5;
+    --navy-deep:#0f2f85;
+    --ink-navy:#10203f;
+    --gold:#c9a84c;
+    --cream:#f5f0e8;
+    --cream-soft:#faf7f1;
+    --ink:#2a2a30;
+    --white:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Lato',sans-serif;color:var(--ink);background:var(--cream-soft);line-height:1.7;font-weight:300}
+  img{max-width:100%;display:block}
+  h1,h2,h3,.serif{font-family:'Cormorant Garamond',serif}
+
+  .wrap{max-width:980px;margin:0 auto;padding:0 28px}
+  .wrap-wide{max-width:1120px;margin:0 auto;padding:0 28px}
+
+  .eyebrow{font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);font-weight:700}
+  .eyebrow.on-light{color:var(--navy)}
+
+  /* ---------- placeholders ---------- */
+  .ph{
+    background:repeating-linear-gradient(45deg,#ece5d8,#ece5d8 12px,#f2ecdf 12px,#f2ecdf 24px);
+    border:2px dashed var(--gold);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;color:#8a7a4e;gap:6px;padding:16px;
+  }
+  .ph .ph-icon{font-size:24px;line-height:1}
+  .ph .ph-label{font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700}
+  .ph .ph-hint{font-size:12px;opacity:.75}
+  .ph-circle{border-radius:50%}
+  .ph-dark{background:repeating-linear-gradient(45deg,#132a5e,#132a5e 12px,#17337a 12px,#17337a 24px);color:#cbb877;border-color:var(--gold)}
+
+  /* ---------- nav ---------- */
+  nav{position:absolute;top:0;left:0;right:0;z-index:30;padding:26px 0}
+  nav .wrap-wide{display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand .ph{width:38px;height:38px;font-size:0;padding:2px;border-color:rgba(255,255,255,.5)}
+  .brand .ph .ph-label{font-size:8px;color:rgba(255,255,255,.8)}
+  .brand-name{color:var(--white);font-size:13px;letter-spacing:3px;font-weight:400;text-transform:uppercase;font-family:'Cormorant Garamond',serif}
+  .nav-cta{color:var(--white);text-decoration:none;font-size:12px;letter-spacing:2px;text-transform:uppercase;border-bottom:1px solid var(--gold);padding-bottom:4px}
+
+  /* ---------- FULL-BLEED HERO ---------- */
+  .hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;overflow:hidden}
+  .hero .hero-bg{position:absolute;inset:0}
+  .hero .hero-bg.ph{border:none;border-radius:0}
+  .hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(15,20,40,.22) 0%,rgba(11,15,32,.45) 45%,rgba(10,13,28,.78) 72%,rgba(9,12,26,.94) 100%)}
+  .hero-content{position:relative;z-index:2;color:var(--white);padding-bottom:70px;width:100%}
+  .hero-content .eyebrow{color:var(--gold)}
+  .hero h1{font-size:clamp(38px,6vw,68px);font-weight:500;line-height:1.06;margin:20px 0 22px;max-width:15ch}
+  .hero h1 em{font-style:italic;color:var(--gold)}
+  .hero .sub{font-size:19px;max-width:52ch;opacity:.92;font-weight:300;margin-bottom:34px}
+  .hero-ctas{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+  .btn{display:inline-block;text-decoration:none;font-weight:400;letter-spacing:1px;font-size:14px;padding:16px 34px}
+  .btn-primary{background:var(--gold);color:var(--ink-navy);font-weight:700}
+  .btn-primary:hover{background:#dab868}
+  .btn-line{color:var(--white);border-bottom:1px solid rgba(255,255,255,.5);padding:16px 0}
+  .btn-line:hover{border-color:var(--gold);color:var(--gold)}
+
+  /* ---------- stat strip ---------- */
+  .stats{background:var(--ink-navy);color:var(--white)}
+  .stats .wrap-wide{display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px;padding:26px 0;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;text-align:center}
+  .stats span{flex:1;min-width:150px;opacity:.9}
+  .stats span b{display:block;font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--gold);font-weight:600;letter-spacing:0;margin-bottom:4px;text-transform:none}
+
+  /* ---------- programme / pillars ---------- */
+  .programme{background:var(--cream-soft) url('images/texture-cream.jpg') center/cover no-repeat;padding:120px 0}
+  .prog-head{max-width:640px;margin-bottom:70px}
+  .prog-head h2{font-size:clamp(30px,4.4vw,46px);color:var(--navy);font-weight:500;line-height:1.15;margin-top:16px}
+  .prog-head h2 em{font-style:italic;color:var(--gold)}
+  .prog-head p{margin-top:16px;color:#5a5a60;font-size:17px}
+
+  .pillar{display:grid;grid-template-columns:110px 1fr;gap:8px;padding:38px 0;border-top:1px solid #ddd3bd}
+  .pillar:last-of-type{border-bottom:1px solid #ddd3bd}
+  .pillar .n{font-family:'Cormorant Garamond',serif;font-size:52px;color:var(--gold);font-weight:400;line-height:1}
+  .pillar h3{font-size:24px;color:var(--navy);font-weight:600;margin-bottom:10px}
+  .pillar p{font-size:16px;color:#4a4a52;max-width:60ch}
+
+  /* ---------- become section (asymmetric) ---------- */
+  .become{background:var(--white);padding:110px 0}
+  .become-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;align-items:start}
+  .become-list{display:grid;grid-template-columns:1fr;gap:30px;margin-top:0}
+  .become-item{border-bottom:1px solid #e6dfd2;padding-bottom:20px}
+  .become-item .tag{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;color:var(--gold);font-weight:600}
+  .become-item p{margin-top:8px;font-size:15.5px;color:#4a4a52}
+
+  /* ---------- includes (editorial list, asymmetric) ---------- */
+  .includes{background:var(--cream) url('images/texture-cream.jpg') center/cover no-repeat;padding:130px 0}
+  .inc-layout{display:grid;grid-template-columns:360px 1fr;gap:90px;align-items:start}
+  .inc-head{position:sticky;top:60px}
+  .inc-head h2{font-size:clamp(28px,4vw,40px);color:var(--navy);font-weight:500;line-height:1.15;margin-top:14px}
+  .inc-head h2 em{font-style:italic;color:var(--gold)}
+  .inc-head p{margin-top:18px;color:#5a5a60;font-size:16px;max-width:34ch}
+  .inc-item{display:grid;grid-template-columns:64px 1fr;gap:10px;padding:28px 0;border-top:1px solid #ddd3bd}
+  .inc-item:last-child{border-bottom:1px solid #ddd3bd}
+  .inc-item .n{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:25px;color:var(--gold);line-height:1.4}
+  .inc-item h3{font-size:20px;color:var(--navy);font-weight:600;margin-bottom:6px}
+  .inc-item p{font-size:15px;color:#4a4a52;max-width:58ch}
+
+  /* ---------- world / countries ---------- */
+  .world{background:linear-gradient(rgba(23,66,181,.38),rgba(23,66,181,.38)),url('images/texture-navy.jpg') center/cover no-repeat #1c3260;color:var(--white);padding:90px 0;text-align:center}
+  .world .eyebrow{color:var(--gold)}
+  .world h2{font-size:clamp(24px,3.4vw,32px);font-weight:400;margin:16px 0 34px;font-style:italic}
+  .country-list{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 34px;font-family:'Cormorant Garamond',serif;font-size:19px}
+  .country-list span{opacity:.85;position:relative}
+  .country-list span:not(:last-child)::after{content:"·";position:absolute;right:-19px;color:var(--gold)}
+
+  /* ---------- guruji quote ---------- */
+  .guruji{background:var(--cream-soft);padding:110px 0}
+  .guruji-grid{display:grid;grid-template-columns:280px 1fr;gap:56px;align-items:center}
+  .guruji-grid .ph{aspect-ratio:1/1;border-radius:50%}
+  blockquote{border:none;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(26px,3.4vw,36px);color:var(--navy);line-height:1.4}
+  .guruji-attr{margin-top:22px;font-family:'Lato',sans-serif;font-style:normal;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#8a8a90}
+  .guruji-attr b{display:block;font-size:15px;letter-spacing:1px;color:var(--navy);margin-bottom:4px}
+
+  /* ---------- faculty ---------- */
+  .faculty{background:var(--white);padding:110px 0}
+  .fac-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:44px 30px;margin-top:50px}
+  .fac-card{text-align:center}
+  .fac-card .ph{width:110px;height:110px;margin:0 auto 14px;padding:6px}
+  .fac-card .ph .ph-label{font-size:8px}
+  .fac-card .name{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:600;color:var(--navy);line-height:1.2}
+  .fac-card .role{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8a8a90;margin-top:5px}
+
+  /* ---------- testimonials ---------- */
+  .testimonials{background:var(--cream);padding:110px 0}
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:48px 40px;margin-top:56px}
+  .testi-card{text-align:center}
+  .testi-card .ph{width:96px;height:96px;margin:0 auto 20px;padding:6px}
+  .testi-card .ph .ph-label{font-size:8px}
+  .testi-quote{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;color:var(--navy);line-height:1.5}
+  .testi-name{margin-top:16px;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#8a8a90;font-weight:700}
+
+  /* ---------- next step / webinar ---------- */
+  .nextstep{background:linear-gradient(rgba(23,66,181,.38),rgba(23,66,181,.38)),url('images/texture-navy.jpg') center/cover no-repeat #1c3260;color:var(--white);padding:110px 0;text-align:center}
+  .nextstep .eyebrow{color:var(--gold)}
+  .nextstep h2{font-size:clamp(30px,4.6vw,46px);font-weight:400;margin:18px auto 16px;max-width:16ch}
+  .nextstep h2 em{color:var(--gold);font-style:italic}
+  .nextstep p{max-width:56ch;margin:0 auto 40px;opacity:.9;font-size:17px}
+  .meta-row{display:flex;justify-content:center;gap:26px;margin-top:26px;font-size:12px;letter-spacing:1px;text-transform:uppercase;opacity:.75;flex-wrap:wrap}
+
+  /* ---------- footer ---------- */
+  footer{background:var(--ink-navy);color:rgba(255,255,255,.75);padding:50px 0 26px;text-align:center}
+  footer .foot-motto{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;color:var(--gold);margin-bottom:22px}
+  footer p{font-size:13px;line-height:1.9}
+  footer a{color:rgba(255,255,255,.75);text-decoration:none}
+  .foot-base{margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);font-size:11px;opacity:.55;letter-spacing:1px}
+
+  /* ---------- lotus watermark motif ---------- */
+  .wm{position:relative;overflow:hidden}
+  .wm::before{content:"";position:absolute;width:480px;height:384px;background:url('logo.png') no-repeat center/contain;opacity:.05;mix-blend-mode:multiply;pointer-events:none}
+  .wm-r::before{top:50px;right:-130px}
+  .wm-l::before{top:50px;left:-130px}
+  .wm > .wrap,.wm > .wrap-wide{position:relative}
+
+  /* ---------- curriculum ---------- */
+  .curriculum{background:var(--white);padding:120px 0}
+  .curriculum-list{list-style:none;margin-top:10px;display:flex;flex-direction:column;gap:6px}
+  .curriculum-list li{font-size:15.5px;color:#4a4a52;padding-left:18px;position:relative;line-height:1.65}
+  .curriculum-list li::before{content:"—";position:absolute;left:0;color:var(--gold)}
+  .schedule-strip{margin-top:56px;padding:36px 40px;background:var(--ink-navy);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px}
+  .schedule-label{font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);font-weight:700;white-space:nowrap}
+  .sched-row{display:flex;gap:40px;align-items:center;flex-wrap:wrap}
+  .sched-item{display:flex;flex-direction:column;gap:4px}
+  .sched-item strong{font-family:'Cormorant Garamond',serif;font-size:21px;color:var(--gold);font-weight:600}
+  .sched-item span{font-size:14px;color:rgba(255,255,255,.85);letter-spacing:.5px}
+  .sched-divider{width:1px;height:36px;background:rgba(255,255,255,.2);flex:none}
+
+  @media (max-width:880px){
+    .schedule-strip{padding:28px 24px;flex-direction:column;align-items:flex-start}
+    .sched-divider{display:none}
+    .become-grid{grid-template-columns:1fr;gap:44px}
+    .inc-layout{grid-template-columns:1fr;gap:44px}
+    .inc-head{position:static}
+    .fac-grid{grid-template-columns:repeat(2,1fr)}
+    .testi-grid{grid-template-columns:1fr;max-width:440px;margin-left:auto;margin-right:auto}
+    .guruji-grid{grid-template-columns:1fr}
+    .guruji-grid .ph{max-width:220px;margin:0 auto}
+    .pillar{grid-template-columns:70px 1fr}
+    .pillar .n{font-size:38px}
+    .wm::before{width:320px;height:256px;opacity:.04}
+  }
+  @media (max-width:560px){
+    .inc-item{grid-template-columns:44px 1fr}
+    .country-list{font-size:16px;gap:10px 22px}
+    .hero{min-height:100vh}
+  }
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+</style>
+</head>
+<body>
+
+<!-- ══════════ NAV (floats over hero) ══════════ -->
+<nav>
+  <div class="wrap-wide">
+    <div class="brand">
+      <img src="logo.png" alt="Nirvana Yoga Global logo" style="height:38px;width:auto">
+      <div class="brand-name">Nirvana Yoga Global</div>
+    </div>
+    <a class="nav-cta" href="#next-step">Free Orientation</a>
+  </div>
+</nav>
+
+<!-- ══════════ FULL-BLEED HERO ══════════ -->
+<section class="hero">
+  <img src="images/hero-ttc.png" alt="Yoga teacher training class in session" class="hero-bg" style="width:100%;height:100%;object-fit:cover;object-position:center 30%">
+  <div class="wrap-wide hero-content">
+    <span class="eyebrow">Institute of Nirvana Yoga · Six-Month Programme</span>
+    <h1>A complete inner transformation, <em>not just a certificate.</em></h1>
+    <p class="sub">Most Yoga Teacher Trainings teach you how to teach poses. This one teaches you how to transform lives — starting with your own.</p>
+    <div class="hero-ctas">
+      <!-- TODO: replace with real Tagmango registration URL -->
+      <a class="btn btn-primary" href="#">Register for Free Webinar</a>
+      <a class="btn btn-line" href="#programme">Explore the programme</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ STATS ══════════ -->
+<div class="stats">
+  <div class="wrap-wide">
+    <span><b>RYS 200</b>Yoga Alliance Certified</span>
+    <span><b>100%</b>Live Interactive Classes</span>
+    <span><b>1 Year</b>Free Mentorship</span>
+    <span><b>12+</b>Countries Represented</span>
+    <span><b>50,000+</b>Students Worldwide</span>
+  </div>
+</div>
+
+<!-- ══════════ THE PROGRAMME — pillars ══════════ -->
+<section class="programme wm wm-r" id="programme">
+  <div class="wrap">
+    <div class="prog-head">
+      <span class="eyebrow on-light">The Programme</span>
+      <h2>A system that <em>integrates</em> everything.</h2>
+      <p>Built on the teachings of Bodhisatvan Madhavacharyan, Founder of the Nirvana Yoga System — this is not a fixed routine taught to a room. It is a living integration of four pillars, delivered across six months.</p>
+    </div>
+
+    <div class="pillar">
+      <div class="n">01</div>
+      <div><h3>Self-transformation, first</h3><p>You must be healthy, peaceful, and confident before you guide anyone else. Deep experiential practice — you go through your own transformation before leading others through theirs.</p></div>
+    </div>
+    <div class="pillar">
+      <div class="n">02</div>
+      <div><h3>Therapeutic yoga — solutions, not just asanas</h3><p>Understanding the human system — body, mind, energy — and how to work with each student's unique reality: sleeplessness, lifestyle diseases, psychosomatic conditions. Solutions at the root, not routines at the surface.</p></div>
+    </div>
+    <div class="pillar">
+      <div class="n">03</div>
+      <div><h3>Teaching &amp; emotional guidance</h3><p>How to hold space, guide students through real challenges, and lead a class with genuine presence and practical, hands-on teaching experience throughout the six months.</p></div>
+    </div>
+    <div class="pillar">
+      <div class="n">04</div>
+      <div><h3>A lifelong learner, always</h3><p>A good teacher is always a good learner. Certification is a beginning — continued masterclasses and mentorship carry you well beyond graduation day.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CURRICULUM ══════════ -->
+<section class="curriculum wm wm-l" id="curriculum">
+  <div class="wrap">
+    <div class="prog-head">
+      <span class="eyebrow on-light">What you'll study</span>
+      <h2>The full curriculum — <em>in depth.</em></h2>
+      <p>Six months of live, interactive learning across four subject areas — grounded in the Nirvana Yoga tradition and practical from day one.</p>
+    </div>
+
+    <div class="pillar">
+      <div class="n">01</div>
+      <div>
+        <h3>Nirvana Yoga Practical</h3>
+        <p>The living, embodied core of the course — every session is practice, not just theory.</p>
+        <ul class="curriculum-list">
+          <li>Yogic loosening exercises</li>
+          <li>Sukshma vyayama (joint exercises)</li>
+          <li>Asana kriya — Surya Namaskar</li>
+          <li>Standing, sitting, prone &amp; supine asanas</li>
+          <li>Pranayama techniques</li>
+          <li>Meditation techniques</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="n">02</div>
+      <div>
+        <h3>Anatomy &amp; Physiology</h3>
+        <p>A thorough understanding of the human body as it relates to yoga practice — enabling therapeutic application and injury prevention in every class you lead.</p>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="n">03</div>
+      <div>
+        <h3>Yoga Philosophy</h3>
+        <p>The foundations of classical yoga philosophy — giving your practice depth and your teaching a coherent, grounded perspective that students can feel.</p>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="n">04</div>
+      <div>
+        <h3>Teaching Methodology</h3>
+        <p>How to structure, adapt, and lead classes for real students — including regular peer-teaching practice sessions built into the six months, so the confidence is real before you teach independently.</p>
+      </div>
+    </div>
+
+    <div class="schedule-strip">
+      <span class="schedule-label">Class Schedule</span>
+      <div class="sched-row">
+        <div class="sched-item">
+          <strong>Weekends</strong>
+          <span>Saturdays &amp; Sundays · 6:00 – 8:00 AM</span>
+        </div>
+        <div class="sched-divider"></div>
+        <div class="sched-item">
+          <strong>Weekdays</strong>
+          <span>Monday – Friday · 7:30 – 9:00 PM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ YOU DON'T JUST BECOME A TEACHER ══════════ -->
+<section class="become">
+  <div class="wrap-wide become-grid">
+    <div>
+      <span class="eyebrow on-light">What you become</span>
+      <h2 style="font-size:clamp(28px,4vw,40px);color:var(--navy);font-weight:500;margin-top:14px;max-width:14ch">You don't just become a teacher.</h2>
+    </div>
+    <div class="become-list">
+      <div class="become-item"><span class="tag">A healer</span><p>Who understands body, mind, and energy deeply enough to personalise every class to the person in front of them.</p></div>
+      <div class="become-item"><span class="tag">A guide</span><p>Who can support students through emotional and mental challenges — not just physical ones.</p></div>
+      <div class="become-item"><span class="tag">A conscious leader</span><p>Whose own transformation is the visible foundation of everything they teach.</p></div>
+      <div class="become-item"><span class="tag">A certified professional</span><p>Yoga Alliance RYS 200 and AYUSH-empanelled faculty — recognised internationally.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ WHAT'S INCLUDED (editorial list) ══════════ -->
+<section class="includes wm wm-r">
+  <div class="wrap-wide inc-layout">
+    <div class="inc-head">
+      <span class="eyebrow on-light">Beyond the six months</span>
+      <h2>The course ends. <em>The support doesn't.</em></h2>
+      <p>Everything inside the six months is designed to make you a working teacher — and everything after it keeps you one.</p>
+    </div>
+    <div class="inc-list">
+      <div class="inc-item"><div class="n">i.</div><div><h3>Teaching, taught properly</h3><p>Asanas, anatomy, and philosophy — plus the art of actually leading a class: sequencing, instruction, presence, and confidence building.</p></div></div>
+      <div class="inc-item"><div class="n">ii.</div><div><h3>Therapeutic yoga training</h3><p>Learn to teach people with different needs — lifestyle issues, psychosomatic conditions, sleeplessness — addressing the root, not just the symptom.</p></div></div>
+      <div class="inc-item"><div class="n">iii.</div><div><h3>Practical learning throughout</h3><p>Supervised teaching practice across the six months, so your first real class isn't your first time teaching.</p></div></div>
+      <div class="inc-item"><div class="n">iv.</div><div><h3>One year of free mentorship</h3><p>The course ends; the guidance doesn't. A full year of mentorship, career guidance, and training support at no extra cost.</p></div></div>
+      <div class="inc-item"><div class="n">v.</div><div><h3>Niche specialisation</h3><p>Find your direction — pregnancy yoga, yoga for the elderly, corporate wellness — and build a career around it.</p></div></div>
+      <div class="inc-item"><div class="n">vi.</div><div><h3>YCB exam preparation</h3><p>Structured preparation for the Yoga Certification Board examination, guided by AYUSH-empanelled faculty.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ WORLD / COUNTRIES ══════════ -->
+<section class="world">
+  <div class="wrap">
+    <span class="eyebrow">Our students are already teaching in</span>
+    <h2>"They're not just teaching — they're transforming lives."</h2>
+    <div class="country-list">
+      <span>India</span><span>Canada</span><span>United States</span><span>United Kingdom</span>
+      <span>Japan</span><span>Romania</span><span>Sweden</span><span>Germany</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ GURUJI QUOTE ══════════ -->
+<section class="guruji">
+  <div class="wrap">
+    <div class="guruji-grid">
+      <img src="images/guruji.jpg" alt="Bodhisatvan Madhavacharyan" style="width:100%;aspect-ratio:1/1;border-radius:50%;object-fit:cover;object-position:center 10%">
+      <div>
+        <blockquote>&ldquo;Yoga is not a practice you do. It is a transformation you live — beginning within yourself.&rdquo;</blockquote>
+        <div class="guruji-attr"><b>Bodhisatvan Madhavacharyan</b>Enlightened Spiritual Master · Founder, Nirvana Yoga System</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FACULTY (from govt portfolio) ══════════ -->
+<section class="faculty wm wm-l">
+  <div class="wrap">
+    <span class="eyebrow on-light">Faculty</span>
+    <h2 style="font-size:clamp(26px,3.6vw,36px);color:var(--navy);font-weight:500;margin-top:14px">Meet the Faculty.</h2>
+    <div class="fac-grid">
+      <div class="fac-card"><img src="images/dhanvayogi.jpg" alt="Dhanvayogi" style="width:110px;height:110px;border-radius:50%;object-fit:cover;object-position:center 15%;margin:0 auto 14px"><div class="name">Dhanvayogi</div><div class="role">Faculty Member, Kerala University</div></div>
+      <div class="fac-card"><img src="images/siddhayogi.jpg" alt="Siddhayogi" style="width:110px;height:110px;border-radius:50%;object-fit:cover;object-position:center 20%;margin:0 auto 14px"><div class="name">Siddhayogi</div><div class="role">MSc Yoga</div></div>
+      <div class="fac-card"><img src="images/jasmine.jpg" alt="Dr Jasmine Jameela" style="width:110px;height:110px;border-radius:50%;object-fit:cover;object-position:center 12%;margin:0 auto 14px"><div class="name">Dr Jasmine Jameela</div><div class="role"></div></div>
+      <div class="fac-card"><img src="images/sreerag.jpg" alt="Sreerag" style="width:110px;height:110px;border-radius:50%;object-fit:cover;margin:0 auto 14px"><div class="name">Sreerag</div><div class="role">TTC, PG Diploma in Yoga</div></div>
+      <div class="fac-card"><img src="images/gowri.png" alt="Gowri" style="width:110px;height:110px;border-radius:50%;object-fit:cover;margin:0 auto 14px"><div class="name">Gowri</div><div class="role">NYTTC</div></div>
+      <div class="fac-card"><img src="images/aditya-prasad.jpg" alt="Aditya Prasad" style="width:110px;height:110px;border-radius:50%;object-fit:cover;object-position:center 10%;margin:0 auto 14px"><div class="name">Aditya Prasad</div><div class="role">MSc Yoga</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ TESTIMONIALS ══════════ -->
+<!-- ⚠ PLACEHOLDER — DO NOT PUBLISH WITHOUT REPLACING:
+     All three quotes below are placeholders. Replace each with the real
+     testimonial text (and real photos) before this page goes live. -->
+<section class="testimonials">
+  <div class="wrap">
+    <span class="eyebrow on-light">What our graduates say</span>
+    <h2 style="font-size:clamp(26px,3.6vw,36px);color:var(--navy);font-weight:500;margin-top:14px">In their own words.</h2>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <img src="images/amalia.png" alt="Amalia Stamate" style="width:96px;height:96px;border-radius:50%;object-fit:cover;margin:0 auto 20px">
+        <p class="testi-quote">&ldquo;[Placeholder — real testimonial from Amalia to be added]&rdquo;</p>
+        <div class="testi-name">Amalia Stamate</div>
+      </div>
+      <div class="testi-card">
+        <img src="images/alina.jpg" alt="Alina Vasilache" style="width:96px;height:96px;border-radius:50%;object-fit:cover;margin:0 auto 20px">
+        <p class="testi-quote">&ldquo;[Placeholder — real testimonial from Alina to be added]&rdquo;</p>
+        <div class="testi-name">Alina Vasilache</div>
+      </div>
+      <div class="testi-card">
+        <img src="images/veronica.png" alt="Veronica Mathew" style="width:96px;height:96px;border-radius:50%;object-fit:cover;margin:0 auto 20px">
+        <p class="testi-quote">&ldquo;[Placeholder — real testimonial from Veronica to be added]&rdquo;</p>
+        <div class="testi-name">Veronica Mathew</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ YOUR NEXT STEP / WEBINAR ══════════ -->
+<section class="nextstep" id="next-step">
+  <div class="wrap">
+    <span class="eyebrow">Your next step</span>
+    <h2>Begin with a <em>Free Orientation</em></h2>
+    <p>Meet the teachers. Ask your questions. Feel the difference.</p>
+    <!-- TODO: replace with real Tagmango registration URL -->
+    <a class="btn btn-primary" href="#">Register for Free Webinar</a>
+    <!-- EDIT: batch date -->
+    <div class="meta-row"><span>Tuesday, 25 August 2026 · 8:00 – 9:30 PM IST</span><span>No payment required</span><span>Limited seats</span></div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-motto">&ldquo;One World, One Humanity, One Goal.&rdquo;</div>
+    <p>Nirvana Yoga Global · MRA-3, Mannadi Lane, Ambalamukku, Peroorkada P.O., Thiruvananthapuram, Kerala — 695005<br>
+    <a href="tel:+917736923604">+91 77369 23604</a> · <a href="mailto:info@nirvanayogaglobal.com">info@nirvanayogaglobal.com</a> · <a href="https://www.nirvanayogaglobal.com">nirvanayogaglobal.com</a></p>
+    <div class="foot-base">© 2026 Institute of Nirvana Yoga</div>
+  </div>
+</footer>
+
+</body>
+</html>

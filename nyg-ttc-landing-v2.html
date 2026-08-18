@@ -145,12 +145,15 @@
   .testi-name{margin-top:16px;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#8a8a90;font-weight:700}
 
   /* ---------- next step / webinar ---------- */
-  .nextstep{background:linear-gradient(rgba(23,66,181,.38),rgba(23,66,181,.38)),url('images/texture-navy.jpg') center/cover no-repeat #1c3260;color:var(--white);padding:110px 0;text-align:center}
+  .nextstep{background:linear-gradient(rgba(23,66,181,.38),rgba(23,66,181,.38)),url('images/texture-navy.jpg') center/cover no-repeat #1c3260;color:var(--white);padding:110px 0}
+  .next-grid{display:grid;grid-template-columns:380px 1fr;gap:70px;align-items:center}
+  .next-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:6px;border:1px solid rgba(201,168,76,.55)}
+  .next-host{margin-top:14px;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);font-weight:700;text-align:center}
   .nextstep .eyebrow{color:var(--gold)}
-  .nextstep h2{font-size:clamp(30px,4.6vw,46px);font-weight:400;margin:18px auto 16px;max-width:16ch}
+  .nextstep h2{font-size:clamp(30px,4.6vw,46px);font-weight:400;margin:18px 0 16px;max-width:16ch}
   .nextstep h2 em{color:var(--gold);font-style:italic}
-  .nextstep p{max-width:56ch;margin:0 auto 40px;opacity:.9;font-size:17px}
-  .meta-row{display:flex;justify-content:center;gap:26px;margin-top:26px;font-size:12px;letter-spacing:1px;text-transform:uppercase;opacity:.75;flex-wrap:wrap}
+  .nextstep p{max-width:56ch;margin:0 0 36px;opacity:.9;font-size:17px}
+  .meta-row{display:flex;justify-content:flex-start;gap:26px;margin-top:26px;font-size:12px;letter-spacing:1px;text-transform:uppercase;opacity:.75;flex-wrap:wrap}
 
   /* ---------- footer ---------- */
   footer{background:var(--ink-navy);color:rgba(255,255,255,.75);padding:50px 0 26px;text-align:center}
@@ -191,6 +194,8 @@
     .schedule-strip{padding:28px 24px;flex-direction:column;align-items:flex-start}
     .sched-divider{display:none}
     .become-grid{grid-template-columns:1fr;gap:44px}
+    .next-grid{grid-template-columns:1fr;gap:44px}
+    .next-photo{max-width:320px;margin:0 auto}
     .inc-layout{grid-template-columns:1fr;gap:44px}
     .inc-head{position:static}
     .fac-grid{grid-template-columns:repeat(2,1fr)}
@@ -453,14 +458,19 @@
 
 <!-- ══════════ YOUR NEXT STEP / WEBINAR ══════════ -->
 <section class="nextstep" id="next-step">
-  <div class="wrap">
-    <span class="eyebrow">Your next step</span>
-    <h2>Begin with a <em>Free Orientation</em></h2>
-    <p>Meet the teachers. Ask your questions. Feel the difference.</p>
-    <!-- TODO: replace with real Tagmango registration URL -->
-    <a class="btn btn-primary" href="#">Register for Free Webinar</a>
-    <!-- EDIT: batch date -->
-    <div class="meta-row"><span>Tuesday, 25 August 2026 · 8:00 – 9:30 PM IST</span><span>No payment required</span><span>Limited seats</span></div>
+  <div class="wrap-wide next-grid">
+    <div class="next-photo">
+      <img src="images/dhanvayogi.jpg" alt="Dhanvayogi, webinar host">
+      <div class="next-host">Hosted by Dhanvayogi</div>
+    </div>
+    <div>
+      <span class="eyebrow">Your next step</span>
+      <h2>Begin with a <em>Free Orientation</em></h2>
+      <p>Meet the teachers. Ask your questions. Feel the difference.</p>
+      <!-- TODO: replace with real Tagmango registration URL -->
+      <a class="btn btn-primary" href="#">Register for Free Webinar</a>
+      <div class="meta-row"><span>Tuesday, 25 August 2026 · 8:00 – 9:30 PM IST</span><span>No payment required</span><span>Limited seats</span></div>
+    </div>
   </div>
 </section>
 

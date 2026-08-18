@@ -159,6 +159,14 @@
   footer a{color:rgba(255,255,255,.75);text-decoration:none}
   .foot-base{margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);font-size:11px;opacity:.55;letter-spacing:1px}
 
+  /* ---------- photo break ---------- */
+  .photobreak{position:relative;min-height:62vh;display:flex;align-items:flex-end;overflow:hidden}
+  .photobreak img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .photobreak::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,12,26,0) 42%,rgba(9,12,26,.7) 100%)}
+  .photobreak .pb-inner{position:relative;z-index:2;width:100%;padding-bottom:54px}
+  .photobreak .pb-quote{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(23px,3.2vw,34px);color:var(--white);line-height:1.35;max-width:26ch}
+  .photobreak .pb-quote em{color:var(--gold);font-style:italic}
+
   /* ---------- lotus watermark motif ---------- */
   .wm{position:relative;overflow:hidden}
   .wm::before{content:"";position:absolute;width:480px;height:384px;background:url('logo.png') no-repeat center/contain;opacity:.05;mix-blend-mode:multiply;pointer-events:none}
@@ -268,7 +276,56 @@
   </div>
 </section>
 
-<!-- ══════════ CURRICULUM ══════════ -->
+<!-- ══════════ PHOTO BREAK — practicum ══════════ -->
+<section class="photobreak">
+  <img src="images/practicum.jpg" alt="Trainee leading a supervised teaching-practice session">
+  <div class="wrap-wide pb-inner">
+    <p class="pb-quote">&ldquo;Your first real class shouldn't be <em>your first time teaching.</em>&rdquo;</p>
+  </div>
+</section>
+
+<!-- ══════════ YOU DON'T JUST BECOME A TEACHER ══════════ -->
+<section class="become">
+  <div class="wrap-wide become-grid">
+    <div>
+      <span class="eyebrow on-light">What you become</span>
+      <h2 style="font-size:clamp(28px,4vw,40px);color:var(--navy);font-weight:500;margin-top:14px;max-width:14ch">You don't just become a teacher.</h2>
+    </div>
+    <div class="become-list">
+      <div class="become-item"><span class="tag">A healer</span><p>Who understands body, mind, and energy deeply enough to personalise every class to the person in front of them.</p></div>
+      <div class="become-item"><span class="tag">A guide</span><p>Who can support students through emotional and mental challenges — not just physical ones.</p></div>
+      <div class="become-item"><span class="tag">A conscious leader</span><p>Whose own transformation is the visible foundation of everything they teach.</p></div>
+      <div class="become-item"><span class="tag">A certified professional</span><p>Yoga Alliance RYS 200 and AYUSH-empanelled faculty — recognised internationally.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ WORLD / COUNTRIES ══════════ -->
+<section class="world">
+  <div class="wrap">
+    <span class="eyebrow">Our students are already teaching in</span>
+    <h2>"They're not just teaching — they're transforming lives."</h2>
+    <div class="country-list">
+      <span>India</span><span>Canada</span><span>United States</span><span>United Kingdom</span>
+      <span>Japan</span><span>Romania</span><span>Sweden</span><span>Germany</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ GURUJI QUOTE ══════════ -->
+<section class="guruji">
+  <div class="wrap">
+    <div class="guruji-grid">
+      <img src="images/guruji.jpg" alt="Bodhisatvan Madhavacharyan" style="width:100%;aspect-ratio:1/1;border-radius:50%;object-fit:cover;object-position:center 10%">
+      <div>
+        <blockquote>&ldquo;Yoga is not a practice you do. It is a transformation you live — beginning within yourself.&rdquo;</blockquote>
+        <div class="guruji-attr"><b>Bodhisatvan Madhavacharyan</b>Enlightened Spiritual Master · Founder, Nirvana Yoga System</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CURRICULUM + SCHEDULE ══════════ -->
 <section class="curriculum wm wm-l" id="curriculum">
   <div class="wrap">
     <div class="prog-head">
@@ -331,22 +388,6 @@
   </div>
 </section>
 
-<!-- ══════════ YOU DON'T JUST BECOME A TEACHER ══════════ -->
-<section class="become">
-  <div class="wrap-wide become-grid">
-    <div>
-      <span class="eyebrow on-light">What you become</span>
-      <h2 style="font-size:clamp(28px,4vw,40px);color:var(--navy);font-weight:500;margin-top:14px;max-width:14ch">You don't just become a teacher.</h2>
-    </div>
-    <div class="become-list">
-      <div class="become-item"><span class="tag">A healer</span><p>Who understands body, mind, and energy deeply enough to personalise every class to the person in front of them.</p></div>
-      <div class="become-item"><span class="tag">A guide</span><p>Who can support students through emotional and mental challenges — not just physical ones.</p></div>
-      <div class="become-item"><span class="tag">A conscious leader</span><p>Whose own transformation is the visible foundation of everything they teach.</p></div>
-      <div class="become-item"><span class="tag">A certified professional</span><p>Yoga Alliance RYS 200 and AYUSH-empanelled faculty — recognised internationally.</p></div>
-    </div>
-  </div>
-</section>
-
 <!-- ══════════ WHAT'S INCLUDED (editorial list) ══════════ -->
 <section class="includes wm wm-r">
   <div class="wrap-wide inc-layout">
@@ -362,31 +403,6 @@
       <div class="inc-item"><div class="n">iv.</div><div><h3>One year of free mentorship</h3><p>The course ends; the guidance doesn't. A full year of mentorship, career guidance, and training support at no extra cost.</p></div></div>
       <div class="inc-item"><div class="n">v.</div><div><h3>Niche specialisation</h3><p>Find your direction — pregnancy yoga, yoga for the elderly, corporate wellness — and build a career around it.</p></div></div>
       <div class="inc-item"><div class="n">vi.</div><div><h3>YCB exam preparation</h3><p>Structured preparation for the Yoga Certification Board examination, guided by AYUSH-empanelled faculty.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════ WORLD / COUNTRIES ══════════ -->
-<section class="world">
-  <div class="wrap">
-    <span class="eyebrow">Our students are already teaching in</span>
-    <h2>"They're not just teaching — they're transforming lives."</h2>
-    <div class="country-list">
-      <span>India</span><span>Canada</span><span>United States</span><span>United Kingdom</span>
-      <span>Japan</span><span>Romania</span><span>Sweden</span><span>Germany</span>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════ GURUJI QUOTE ══════════ -->
-<section class="guruji">
-  <div class="wrap">
-    <div class="guruji-grid">
-      <img src="images/guruji.jpg" alt="Bodhisatvan Madhavacharyan" style="width:100%;aspect-ratio:1/1;border-radius:50%;object-fit:cover;object-position:center 10%">
-      <div>
-        <blockquote>&ldquo;Yoga is not a practice you do. It is a transformation you live — beginning within yourself.&rdquo;</blockquote>
-        <div class="guruji-attr"><b>Bodhisatvan Madhavacharyan</b>Enlightened Spiritual Master · Founder, Nirvana Yoga System</div>
-      </div>
     </div>
   </div>
 </section>
